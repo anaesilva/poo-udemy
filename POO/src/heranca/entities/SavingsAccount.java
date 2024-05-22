@@ -25,8 +25,10 @@ public class SavingsAccount extends Account {
         balance += balance * interestRate;
     }
 
+// sobreposição
     @Override
     public void withdraw(double amount) {
-        balance -= amount;
+        super.withdraw(amount);
+        balance -= 2.0;
     }
 }
