@@ -72,16 +72,22 @@ public class Main {
                 ls.add(product);
             }
         }
+//
+//        System.out.println("PRICE TAGS: ");
+//        for (Product product : ls) {
+//            if (product instanceof ImportedProduct) {
+//                System.out.println(product.getName() + " $" + String.format("%.2f", product.getPrice()) + " (Customs fee: $ " + String.format("%.2f", ((ImportedProduct) product).getCustomsFee()) + ")");
+//            } else if(product instanceof UsedProduct) {
+//                System.out.println(product.getName() + "(used) $" + String.format("%.2f", product.getPrice()) + " (Manufacture date: " + simpleDateFormat.format(((UsedProduct) product).getManufactureDate()) + ")");
+//            } else {
+//                System.out.println(product.getName() + " $" + String.format("%.2f", product.getPrice()));
+//            }
+//        }
+
 
         System.out.println("PRICE TAGS: ");
         for (Product product : ls) {
-            if (product instanceof ImportedProduct) {
-                System.out.println(product.getName() + " $" + String.format("%.2f", product.getPrice()) + " (Customs fee: $ " + String.format("%.2f", ((ImportedProduct) product).getCustomsFee()) + ")");
-            } else if(product instanceof UsedProduct) {
-                System.out.println(product.getName() + "(used) $" + String.format("%.2f", product.getPrice()) + " (Manufacture date: " + simpleDateFormat.format(((UsedProduct) product).getManufactureDate()) + ")");
-            } else {
-                System.out.println(product.getName() + " $" + String.format("%.2f", product.getPrice()));
-            }
+            System.out.println(product.priceTag());
         }
 
         sc.close();
