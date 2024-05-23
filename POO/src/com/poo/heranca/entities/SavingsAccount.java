@@ -1,14 +1,14 @@
-package heranca.entities;
+package com.poo.heranca.entities;
 
 public class SavingsAccount extends Account {
 
     private Double interestRate;
 
-	public SavingsAccount() {
+    public SavingsAccount() {
         super();
     }
 
-	public SavingsAccount(Integer number, String holder, Double balance, Double interestRate) {
+    public SavingsAccount(Integer number, String holder, Double balance, Double interestRate) {
         super(number, holder, balance);
         this.interestRate = interestRate;
     }
@@ -25,10 +25,8 @@ public class SavingsAccount extends Account {
         balance += balance * interestRate;
     }
 
-// sobreposição
     @Override
     public void withdraw(double amount) {
-        super.withdraw(amount);
-        balance -= 2.0;
+        balance -= amount;
     }
 }

@@ -1,6 +1,8 @@
-package com.poo.enums.orderStatus;
+package com.poo.enums;
 
 
+
+import com.poo.enums.OrderStatusEntity;
 
 import java.util.Date;
 

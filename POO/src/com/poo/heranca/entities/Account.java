@@ -1,4 +1,4 @@
-package heranca.entities;
+package com.poo.heranca.entities;
 
 public class Account {
     private Integer number;

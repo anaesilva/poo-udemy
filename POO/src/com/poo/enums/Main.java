@@ -1,4 +1,4 @@
-package com.poo.enums.orderStatus;
+package com.poo.enums;
 
 import java.util.Date;
 
