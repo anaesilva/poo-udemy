@@ -1,4 +1,4 @@
-package com.poo.classeabstracta.entities;
+package com.poo.conceitoabstract.classeabstracta.entities;
 
 public abstract class Account {
 

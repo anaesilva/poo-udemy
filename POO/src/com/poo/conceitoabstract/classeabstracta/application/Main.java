@@ -1,8 +1,8 @@
-package com.poo.classeabstracta.application;
+package com.poo.conceitoabstract.classeabstracta.application;
 
-import com.poo.classeabstracta.entities.Account;
-import com.poo.classeabstracta.entities.BusinessAccount;
-import com.poo.classeabstracta.entities.SavingsAccount;
+import com.poo.conceitoabstract.classeabstracta.entities.Account;
+import com.poo.conceitoabstract.classeabstracta.entities.BusinessAccount;
+import com.poo.conceitoabstract.classeabstracta.entities.SavingsAccount;
 
 import java.util.ArrayList;
 import java.util.List;
