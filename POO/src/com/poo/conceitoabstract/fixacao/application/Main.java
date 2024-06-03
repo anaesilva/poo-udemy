@@ -36,8 +36,6 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        StringBuilder stringBuilder = new StringBuilder();
-
         List<TaxPayer> ls = new ArrayList<>();
 
         System.out.print("Enter the number of tax payers: ");
